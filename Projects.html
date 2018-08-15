@@ -1,84 +1,111 @@
 
-
 <!DOCTYPE html>
 
 <html>
-<head>
-	<title>Login Page</title>
-  <style>
-  .i {
-    padding-top: 100px;
-  }
-  body {
-      font-family: Verdana;
-      margin:0;
-      margin-top : 0;
-      margin-bottom : 0;
-  }
-	button {
-    background-color: rgb(51, 173, 255);
-    color: white;
-    padding: 14px 14px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 5%;
+<style>
+body {
+    font-family: Verdana;
+    margin:0;
+    margin-top : 0;
+    margin-bottom : 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:	linear-gradient(to right, rgb(245,245,245) , rgb(51, 173, 255));
+    position: fixed;
+    width: 100%;
 }
 
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background:	linear-gradient(to right, rgb(245,245,245) , rgb(51, 173, 255));
-      position: fixed;
-      width: 100%;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    float: right;
+    font-size: 18px;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+.yEEsh {
+  padding: 10px 16px;
+  color: rgb(51, 173, 255);
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: 	white;
+    font-size: 300px;
+    font-weight: 300;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .post{
+    margin-left: 10%;
+    margin-right: 5%;
+    height: 400px;
+    width: auto;
+
   }
 
-  li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 20px 16px;
-      text-decoration: none;
-      float: right;
-      font-size: 18px;
-  }
+  .column1 {
+      width: 75%;
+      padding-top: 100px;
+      float: left;
+    }
+    .column2 {
+        float:right;
+        width: 25%;
+        padding-top: 100px;
+      }
+.center{
+  text-align: center;
+  font-size:40px;
+  font-weight: lighter;
+}
 
-  li a:hover {
-      background-color: white;
-      color: black;
-  }
-  .yEEsh {
-    padding: 10px 16px;
-    color: rgb(51, 173, 255);
-    float: left;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  </style>
-</head>
+</style>
 <body>
-  <ul>
-    <li class = "yEEsh">C9 yEEsh</li>
-    <li><a href='Projects.html'>Projects</a></li>
-    <li><a href="#contact">Gaming</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="index.html">Home</a></li>
-  </ul>
-	<div class="i">
-		<form class = "form" action="includes/login.inc.html" method = "POST">
-			<label for="email">Email: </label><input type = "text" name="email" autofocus required>
-			<label for="password">Password: </label><input type = "text" name="password" required>
-			<button type="submit" name = "submit">Login</button>
-		</form>
-
-		<p>Don't have an account? Sign up <a href = "signup.html">here</a></p>
-		<?html
-		if ($_SESSION['logged']) {
-		    echo "Success! You are logged in.";
-		}
-		?>
-	</div>
+<ul>
+  <li class = "yEEsh">C9 yEEsh</li>
+  <li><a href='Login.html'>Login</a></li>
+  <li><a href="Projects">Projects</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="index.html">Home</a></li>
+</ul>
+<div class = "column1">
+  <div class="post">
+  <h1>First Post</h1>
+    <img src = "tonyBiopic-1.jpg" alt = "biopic">
+    <p>Welcome to my Blog! I'm Tony Zhou, a coder, chef, and the best amateur Counter Strike player in the world. On this blog I'll document my achievments, adventures, or anything other experiences I feel like sharing.</p>
+  </div>
+</div>
+<div class = "column2">
+  <h2>Related Posts</h2>
+    <img src = "stock1.jpg" alt = "smexy pic" style="width:400px;height:auto;">
+    <h3><a href = "Stock.html">Lake</a></h3>
+      <p>That is a good looking picture.</p>
+    <img src = "stock2.jpg" alt = "smexy pic2" style="width:400px;height:auto;">
+      <h3><a href = "Stock.html">Starry Night</a></h3>
+        <p>That is another good looking picture.</p>
+</div>
 </body>
 </html>
