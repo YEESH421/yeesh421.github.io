@@ -58,6 +58,18 @@ li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .column1 {
+      width: 60%;
+      padding-top: 100px;
+      float: left;
+      background-color: rgb(51, 173, 255,.7);
+    }
+    .column2 {
+        float:right;
+        width: 40%;
+        padding-top: 100px;
+        background-color:rgb(255,255,255,.7);
+      }
   .post{
     margin-left: 10%;
     margin-right: 5%;
@@ -67,8 +79,6 @@ li a:hover {
   }
 
   .format {
-      padding-top: 100px;
-      float: left;
       margin-left: 10%;
       margin-right: 5%;
     }
@@ -89,8 +99,16 @@ li a:hover {
   <li><a href="index.html">Home</a></li>
 </ul>
 <div class = "format">
+  <div class = "column1">
 <h1>Projects</h1>
 <p>I am an aspiring coder, and I am constantly trying to learn more and hone my skills. Here I will post my latest coding projects.</p>
+<hr>
+<h2> My page generation code </h2>
+<p>I wrote a program in java to make generating the html for my blog pages. I still need to improve on the code so that it updates the main blog page with the new blog post. On a somewhat unrelated note, I also need to create some sort of way for the related posts to automatically update and change based on the post the user is looking at. <a href = "">Here</a> is a link to the code.</p>
+</div>
+<div class = "column2">
+  <h1>Website Notes</h1>
+</div>
 </div>
 </body>
 </html>
