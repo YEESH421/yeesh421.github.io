@@ -4,6 +4,11 @@
 <html>
 <style>
 body {
+  background-image: url("background.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
     font-family: Verdana;
     margin:0;
     margin-top : 0;
@@ -12,9 +17,12 @@ body {
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
-ul {
+h1.a{
+  color:#FF6600;
+}
+ul.a {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -37,6 +45,9 @@ li a {
 li a:hover {
     background-color: white;
     color: black;
+}
+p{
+  color: white;
 }
 .yEEsh {
   padding: 10px 16px;
@@ -62,13 +73,16 @@ li a:hover {
       width: 60%;
       padding-top: 100px;
       float: left;
-      background-color: rgb(51, 173, 255,.7);
+      color: rgb(51, 173, 255);
+      min-height: 1080px;
     }
     .column2 {
         float:right;
         width: 40%;
         padding-top: 100px;
-        background-color:rgb(255,255,255,.7);
+        background-color: rgb(51, 173, 255,.7);
+        color: white;
+        min-height: 1080px;
       }
   .post{
     margin-left: 10%;
@@ -79,18 +93,20 @@ li a:hover {
   }
 
   .format {
-      margin-left: 10%;
-      margin-right: 5%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
     }
 .center{
   text-align: center;
   font-size:40px;
   font-weight: lighter;
 }
-
+ul.b{
+  list-style-type: square;
+}
 </style>
-<body>
-<ul>
+<body link = #FF6600>
+<ul class = "a">
   <li class = "yEEsh">C9 yEEsh</li>
   <li><a href='Login.html'>Login</a></li>
   <li><a href="Gaming.html">Gaming</a></li>
@@ -104,10 +120,13 @@ li a:hover {
 <p>I am an aspiring coder, and I am constantly trying to learn more and hone my skills. Here I will post my latest coding projects.</p>
 <hr>
 <h2> My page generation code </h2>
-<p>I wrote a program in java to make generating the html for my blog pages. I still need to improve on the code so that it updates the main blog page with the new blog post. On a somewhat unrelated note, I also need to create some sort of way for the related posts to automatically update and change based on the post the user is looking at. <a href = "">Here</a> is a link to the code.</p>
+<p>I wrote a program in java to make generating the html for my blog pages. I still need to improve on the code so that it updates the main blog page with the new blog post. On a somewhat unrelated note, I also need to create some sort of way for the related posts to automatically update and change based on the post the user is looking at. <a href = "https://github.com/YEESH421/Java-Page-Generator/blob/master/PageGenerator%20v1" target="_blank">Here</a> is a link to the github page.</p>
 </div>
 <div class = "column2">
   <h1>Website Notes</h1>
+  <ul class = "b">
+<li>8/16/18 - I've decided to host this site via github for the time of being, but unfortunately, the login page will not work as long as this site is hosted on github as php is not supported. Things to look forward to in future updates: Store page for merch, actual merch to put in the store, filling the gaming page with content, and more posts on the blog page.</li>
+</ul>
 </div>
 </div>
 </body>
