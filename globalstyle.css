@@ -25,13 +25,13 @@ li a{
     font-size:1.5em;
 }
 .containerhome {
-    margin-top: 15%;
+    margin-top: 5%;
     position: relative;
     text-align: center;
     color: 	white;
 }
 .container {
-    position: relative;
+    padding-top: 2.5%;
     text-align: center;
 }
 .centered {
@@ -55,4 +55,9 @@ li a{
   text-align: center;
   font-size:40px;
   font-weight: lighter;
+}
+
+img.homeImage{
+    height: 10%;
+    width: 10%
 }
